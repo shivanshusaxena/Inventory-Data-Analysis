@@ -1,0 +1,37 @@
+Inventory Data Analysis:
+
+This repository contains a comprehensive Power BI project designed to analyze supply chain efficiency by evaluating the balance between product demand and availability
+
+Project Overview:
+
+The core objective of this report is to identify patterns in inventory utilization and financial impact. By calculating daily averages and total profit/loss metrics, the dashboard provides actionable insights into stock shortages and surplus management.
+
+Key Metrics & DAX Calculations:
+
+I developed several custom measures to track performance across the inventory lifecycle:
+Supply Dynamics: Calculated Total Demand and Total Availability to determine the Total Supply Shortage, helping to pinpoint where inventory levels fail to meet market needs.
+Operational Averages: Utilized the DIVIDE function to establish Average Availability, Demand, and Loss per day for consistent time-series benchmarking.
+Financial Impact:
+
+Total Profit: Aggregated positive margins by filtering transactions where LOSS/PROFIT > 0.
+
+Total Loss: Isolated negative margins to quantify the financial hit from overstocking or inefficiencies.
+
+Time Intelligence: Used DISTINCTCOUNT on order dates to normalize data across the total number of operational days.
+
+
+Technical Implementation:
+
+Tool: Power BI Desktop.
+Data Modeling: Integrated a "Demand/Availability" dataset featuring order dates, unit prices, and supply metrics.
+Advanced Logic: Used SUMX and FILTER functions to create conditional financial measures that accurately reflect net profit and loss
+
+
+Key Insights Delivered:
+
+Demand vs. Supply Gap: Identifying the exact volume of Total Supply Shortage to optimize procurement.
+Daily Performance: Tracking whether the Average Demand is trending above or below Average Availability.
+Profitability Analysis: Visualizing the ratio between Total Profit and Total Loss to evaluate overall business health.
+
+
+
